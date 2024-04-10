@@ -1,0 +1,27 @@
+.logo-img {
+  width: 100px;
+  height: 60px;
+  animation: $reveal-reverse;
+}
+
+.logo-wrapper {
+  position: fixed;
+  top: 2rem;
+  left: 6rem;
+  z-index: 100;
+  cursor: pointer;
+  overflow: hidden;
+  mix-blend-mode: difference;
+}
+
+@media screen and (max-width: 599px) {
+  .logo-wrapper {
+    left: 2rem;
+    top: 2rem;
+  }
+
+  .logo-img {
+    width: 65px;
+    height: 35px;
+  }
+}

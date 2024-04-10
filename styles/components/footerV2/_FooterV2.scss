@@ -1,0 +1,72 @@
+.footer {
+  text-align: center;
+  @include noise-background;
+  background-color: red;
+}
+
+.footer a,
+.footer span,
+.footer div {
+  color: $black;
+}
+
+.letsmeet {
+  font-family: "Have Heart One";
+  font-size: $step-12;
+}
+
+.footer-main hr {
+  border: none;
+  height: 1px;
+  width: 600px;
+  margin: auto;
+  background-color: $black;
+  opacity: 0.1;
+}
+
+.mail {
+  font-size: $step-3;
+  display: block;
+  padding: 0 0 1.6rem;
+  opacity: 0.8;
+}
+
+.social {
+  padding: 1.6rem 0 10rem;
+}
+
+.social a {
+  padding: 0 10px;
+}
+
+.social img {
+  width: 24px;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 899px) {
+  .footer-main hr {
+    width: 250px;
+  }
+
+  .mail {
+    font-size: $step-1;
+  }
+
+  .social img {
+    width: 18px;
+  }
+
+  .mail {
+    padding: 0 0 0.5rem;
+  }
+
+  .social {
+    padding: 0.5rem 0 3rem;
+  }
+
+  .letsmeet {
+    font-size: 28vw;
+  }
+}
